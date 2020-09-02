@@ -1,39 +1,45 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMover : MonoBehaviour
 {
-    public BoxCollider bc;
-    public Vector3 movement;
     private CharacterController controller;
-    public float gravity = 9.81f;
-    public float moveSpeed = 3f;
-    public float jumpForce = 10f;
+    private Vector3 positionDirection;
+    
+    public float gravity = 3f, jumpForce = 30f, speed = 6f, roSpeed = 5f;
+    public int jumpCount, jumpCountMax = 2;
+    private float yVar;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-        movement.y -= gravity;
-        movement.x = Input.GetAxis("Vertical")*moveSpeed;
-        controller.Move(movement*Time.deltaTime);
+        var vInput = Input.GetAxis("Vertical");
+        var hInput = Input.GetAxis("Horizontal");
+        
+        transform.Rotate(0,roSpeed *hInput,0);
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            movement.y = jumpForce*Time.deltaTime;
-        }
+        yVar -= gravity;
+        
+        positionDirection.Set(speed*vInput, yVar, hInput);
+        positionDirection = transform.TransformDirection(positionDirection);
+        controller.Move(positionDirection * Time.deltaTime);
 
         if (controller.isGrounded)
         {
-            movement.y = 0f;
+            jumpCount = 0;
+            yVar = -0.1f;
         }
-        else
+        
+        //double jump
+        if (Input.GetButtonDown("Jump") && jumpCount < jumpCountMax)
         {
-            movement.y -= gravity;
+            yVar += Mathf.Sqrt(jumpForce * -3f * (-gravity));
+            positionDirection.Set(speed*vInput, yVar, hInput);
+            jumpCount++;
         }
     }
 }
