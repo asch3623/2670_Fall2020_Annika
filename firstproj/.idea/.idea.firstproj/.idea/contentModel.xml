@@ -8,6 +8,8 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CharacterMover.cs" t="Include" />
+          <e p="FloatData.cs" t="Include" />
+          <e p="IntData.cs" t="Include" />
           <e p="Interact.cs" t="Include" />
           <e p="WarmUP.cs" t="Include" />
         </e>
