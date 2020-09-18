@@ -10,9 +10,13 @@
           <e p="ApplyForce.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
+          <e p="ImageFillBehavior.cs" t="Include" />
           <e p="Instancer.cs" t="Include" />
           <e p="IntData.cs" t="Include" />
           <e p="Interact.cs" t="Include" />
+          <e p="Lerping.cs" t="Include" />
+          <e p="LookAt.cs" t="Include" />
+          <e p="TriggerEvents.cs" t="Include" />
           <e p="WarmUP.cs" t="Include" />
         </e>
       </e>
