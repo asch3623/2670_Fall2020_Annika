@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
-public class ImageBehavior : MonoBehaviour
+public class ImageFillBehavior : MonoBehaviour
 {
     private Image newImage;
     public FloatData dataObj;

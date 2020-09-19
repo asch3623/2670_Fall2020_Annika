@@ -35,8 +35,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Instancer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lerping.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LookAt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ImageFillBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ImageFillBehavior.cs" />
       </list>
     </option>
   </component>
@@ -99,6 +99,7 @@
       <workItem from="1600111534491" duration="2577000" />
       <workItem from="1600283945138" duration="2000000" />
       <workItem from="1600398702805" duration="652000" />
+      <workItem from="1600482722207" duration="227000" />
     </task>
     <servers />
   </component>
