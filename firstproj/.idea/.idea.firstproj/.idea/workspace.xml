@@ -37,6 +37,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ImageFillBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Score.cs" />
       </list>
     </option>
   </component>
@@ -100,6 +101,8 @@
       <workItem from="1600283945138" duration="2000000" />
       <workItem from="1600398702805" duration="652000" />
       <workItem from="1600482722207" duration="446000" />
+      <workItem from="1601267920218" duration="39000" />
+      <workItem from="1601267993136" duration="35000" />
     </task>
     <servers />
   </component>
