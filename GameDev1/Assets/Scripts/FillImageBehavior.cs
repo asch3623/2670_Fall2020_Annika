@@ -43,7 +43,6 @@ public class FillImageBehavior : MonoBehaviour
         while (isDart.value && fillValue >= minFill)
                     {
                         fillValue -= 0.1f;
-                        print(fillValue);
                         im.fillAmount = fillValue;
                         yield return new WaitForSeconds(seconds);
                     }
@@ -52,10 +51,10 @@ public class FillImageBehavior : MonoBehaviour
     {
         while (coolDown.value && fillValue <= maxFill)
         {
+            yield return new WaitForSeconds(1);
             fillValue += 0.001f;
-            print(fillValue);
             im.fillAmount = fillValue;
-            yield return new WaitForSeconds(seconds);
+            
         }
     }
 }

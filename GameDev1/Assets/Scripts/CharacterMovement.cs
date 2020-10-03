@@ -2,16 +2,20 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(TrailRenderer))]
 public class CharacterMovement : MonoBehaviour
 {
   private Rigidbody rb;
   public float moveSpeed = 10f;
   private int seconds = 1, coolDownSeconds = 7;
   public BoolData coolDown, isDarting;
+  private TrailRenderer trail;
 
   private void Start()
   {
     rb = GetComponent<Rigidbody>();
+    trail = GetComponent<TrailRenderer>();
+   trail.emitting = false;
     coolDown.value = false;
   }
 
@@ -31,6 +35,7 @@ public class CharacterMovement : MonoBehaviour
     if (Input.GetKeyDown(KeyCode.LeftShift) && !isDarting.value && !coolDown.value)
            {
              isDarting.value = true;
+             trail.emitting = true;
              moveSpeed = 50f;
              StartCoroutine(Dart());
            }
@@ -42,6 +47,7 @@ public class CharacterMovement : MonoBehaviour
     yield return new WaitForSeconds(seconds);
     moveSpeed = 10f;
     isDarting.value = false;
+    trail.emitting = false;
     coolDown.value = true;
     yield return new WaitForSeconds(coolDownSeconds);
     coolDown.value = false;
