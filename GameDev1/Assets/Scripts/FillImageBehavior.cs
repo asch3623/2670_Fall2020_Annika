@@ -1,27 +1,61 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
 public class FillImageBehavior : MonoBehaviour
 {
   private Image im;
-  public BoolData coolDown;
-  private float fillValue = 0f;
-  private float targetValue = 1f;
-  private float fillSpeed = .1f;
+  public BoolData coolDown, isDart;
+  private float fillValue = 1f;
+  private float maxFill = 1.1f, minFill = -0.1f;
+
+  private float seconds = .5f;
+ 
     void Start()
     {
 
         im = GetComponent<Image>();
         im.fillAmount = fillValue;
+        print(fillValue);
+        isDart.value = false;
     }
-    
+
     void Update()
     {
-        while (coolDown.value == true && fillValue <= 1f)
+        if (isDart.value)
         {
-            fillValue = Mathf.MoveTowards(fillValue, targetValue, Time.deltaTime * fillSpeed);
+            StartCoroutine(decreaseFillVal());
+      
             im.fillAmount = fillValue;
+            return;
+        }
+        if (coolDown.value && !isDart.value)
+        {
+            
+           StartCoroutine(increaseFillVal());
+           im.fillAmount = fillValue;
+        }
+    }
+
+    IEnumerator decreaseFillVal()
+    {
+        while (isDart.value && fillValue >= minFill)
+                    {
+                        fillValue -= 0.1f;
+                        print(fillValue);
+                        im.fillAmount = fillValue;
+                        yield return new WaitForSeconds(seconds);
+                    }
+    }
+    IEnumerator increaseFillVal()
+    {
+        while (coolDown.value && fillValue <= maxFill)
+        {
+            fillValue += 0.001f;
+            print(fillValue);
+            im.fillAmount = fillValue;
+            yield return new WaitForSeconds(seconds);
         }
     }
 }

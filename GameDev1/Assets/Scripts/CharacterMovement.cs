@@ -6,9 +6,8 @@ public class CharacterMovement : MonoBehaviour
 {
   private Rigidbody rb;
   public float moveSpeed = 10f;
-  public bool isDarting;
-  private int seconds = 3, coolDownSeconds = 10;
-  public BoolData coolDown;
+  private int seconds = 1, coolDownSeconds = 7;
+  public BoolData coolDown, isDarting;
 
   private void Start()
   {
@@ -16,44 +15,34 @@ public class CharacterMovement : MonoBehaviour
     coolDown.value = false;
   }
 
-  private void FixedUpdate()
+  private void Update()
   
   {
     rb.transform.rotation = Quaternion.Euler(0,0,0);
     
     float moveH = Input.GetAxis("Horizontal");
     float moveV = Input.GetAxis("Vertical");
-    Vector3 movement = new Vector3(moveH, 0f, moveV)* Time.fixedDeltaTime * moveSpeed;
+    Vector3 movement = new Vector3(moveH, 0f, moveV)* Time.deltaTime * moveSpeed;
     rb.MovePosition(transform.position + movement);
     
-   
-
-  }
-
-  private void Update()
-  {
-     if (Input.GetKeyUp(KeyCode.LeftShift) && isDarting == false && coolDown.value == false)
-        {
-          isDarting = true;
-          moveSpeed = 50f;
-          StartCoroutine(Dart());
-        }
     
-        if (coolDown.value == true)
-        {
-          StartCoroutine(reloadDart());
-        }
+    
+    
+    if (Input.GetKeyDown(KeyCode.LeftShift) && !isDarting.value && !coolDown.value)
+           {
+             isDarting.value = true;
+             moveSpeed = 50f;
+             StartCoroutine(Dart());
+           }
+
   }
 
   IEnumerator Dart()
   {
     yield return new WaitForSeconds(seconds);
-    moveSpeed = 20f;
-    isDarting = false;
+    moveSpeed = 10f;
+    isDarting.value = false;
     coolDown.value = true;
-  }
-  IEnumerator reloadDart()
-  {
     yield return new WaitForSeconds(coolDownSeconds);
     coolDown.value = false;
   }
