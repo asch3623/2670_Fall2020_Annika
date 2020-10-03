@@ -16,7 +16,9 @@
           <e p="Interact.cs" t="Include" />
           <e p="Lerping.cs" t="Include" />
           <e p="LookAt.cs" t="Include" />
+          <e p="Score.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
+          <e p="Vector3Data.cs" t="Include" />
           <e p="WarmUP.cs" t="Include" />
         </e>
       </e>
