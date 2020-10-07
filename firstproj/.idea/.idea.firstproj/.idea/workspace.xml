@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WarmUP.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,6 +43,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Score.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vector3Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIBehavior.cs" />
       </list>
     </option>
   </component>
@@ -110,6 +112,7 @@
       <workItem from="1601352183684" duration="102000" />
       <workItem from="1601492987212" duration="597000" />
       <workItem from="1601926215052" duration="2781000" />
+      <workItem from="1602097579655" duration="2818000" />
     </task>
     <servers />
   </component>
