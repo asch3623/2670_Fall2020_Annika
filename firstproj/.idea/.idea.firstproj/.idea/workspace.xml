@@ -23,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../1610Spring2020_Annika/Project1/Assets/Scripts/KillScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shoot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Vector3Data.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IntData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Instancer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,6 +47,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AIBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharBehavior.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shoot.cs" />
       </list>
     </option>
   </component>
@@ -115,7 +117,7 @@
       <workItem from="1601492987212" duration="597000" />
       <workItem from="1601926215052" duration="2781000" />
       <workItem from="1602097579655" duration="2818000" />
-      <workItem from="1602703798285" duration="1470000" />
+      <workItem from="1602703798285" duration="1912000" />
     </task>
     <servers />
   </component>

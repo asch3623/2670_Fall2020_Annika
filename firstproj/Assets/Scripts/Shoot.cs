@@ -4,25 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerShooting : MonoBehaviour
+public class Shoot : MonoBehaviour
 {
-    /*Variable
-    ammo count
-    force/velocity
-    aim vector
-    instantiate 
-    get key/button down
-    prefab
-    rigidbody 
-    destroy.(GameObject)
-    coroutine
-    wait for seconds
-    rotation direction
-    quaternion identity
-    euler angles?
-    quaternion.euler
-    */
-
     public int ammoCount =10;
     public int maxAmmo = 10;
     public GameObject prefab;
@@ -34,7 +17,6 @@ public class PlayerShooting : MonoBehaviour
 
     private void Start()
     {
-        //reloadTime = new WaitForSeconds(2f);
         coolDownImage.fillAmount = 0;
         ammoCount = maxAmmo;
     }
@@ -75,7 +57,7 @@ public class PlayerShooting : MonoBehaviour
             countDown -= .01f;
             coolDownImage.fillAmount = countDown / reloadTime;
         }
-        // yield return reloadTime;
+        
         ammoCount = maxAmmo;
         canShoot = true;
     }
