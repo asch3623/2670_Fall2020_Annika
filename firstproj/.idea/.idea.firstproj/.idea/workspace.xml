@@ -48,6 +48,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shoot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletBehavior.cs" />
       </list>
     </option>
   </component>
@@ -118,6 +119,7 @@
       <workItem from="1601926215052" duration="2781000" />
       <workItem from="1602097579655" duration="2818000" />
       <workItem from="1602703798285" duration="1912000" />
+      <workItem from="1602819788268" duration="136000" />
     </task>
     <servers />
   </component>
