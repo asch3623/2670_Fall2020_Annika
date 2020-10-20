@@ -8,7 +8,9 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AIBehavior.cs" t="Include" />
+          <e p="AIPatrol.cs" t="Include" />
           <e p="ApplyForce.cs" t="Include" />
+          <e p="BulletBehavior.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
           <e p="CharBehavior.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
@@ -19,6 +21,8 @@
           <e p="Lerping.cs" t="Include" />
           <e p="LookAt.cs" t="Include" />
           <e p="Score.cs" t="Include" />
+          <e p="Shoot.cs" t="Include" />
+          <e p="StringListData.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
           <e p="Vector3Data.cs" t="Include" />
           <e p="WarmUP.cs" t="Include" />
