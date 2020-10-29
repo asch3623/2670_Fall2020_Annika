@@ -12,9 +12,10 @@
           <e p="BulletBehavior.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
           <e p="CharacterStateMachineData.cs" t="Include" />
-          <e p="CharacterWithStates.cs" t="Include" />
           <e p="CharBehavior.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
+          <e p="GameAction.cs" t="Include" />
+          <e p="GameActionHandler.cs" t="Include" />
           <e p="ImageFillBehavior.cs" t="Include" />
           <e p="Instancer.cs" t="Include" />
           <e p="IntData.cs" t="Include" />

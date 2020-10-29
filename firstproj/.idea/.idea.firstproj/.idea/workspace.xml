@@ -13,7 +13,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameActionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WarmUP.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interact.cs" root0="FORCE_HIGHLIGHTING" />
@@ -25,7 +27,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterStateMachineData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StringListData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterWithStates.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../1610Spring2020_Annika/Project1/Assets/Scripts/KillScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Vector3Data.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,6 +58,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StringListData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterStateMachineData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterWithStates.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameActionHandler.cs" />
       </list>
     </option>
   </component>
@@ -131,6 +134,7 @@
       <workItem from="1602877777242" duration="85000" />
       <workItem from="1603134541705" duration="2439000" />
       <workItem from="1603307641784" duration="3196000" />
+      <workItem from="1603912209311" duration="2209000" />
     </task>
     <servers />
   </component>
