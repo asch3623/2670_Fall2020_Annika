@@ -8,6 +8,14 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AIBehavior.cs" t="Include" />
+          <e p="AmmoText.cs" t="Include" />
+          <e p="AnotherDialogueSystem" t="Include">
+            <e p="Conversation.cs" t="Include" />
+            <e p="DialogueLine.cs" t="Include" />
+            <e p="DialogueSystem.cs" t="Include" />
+            <e p="Speaker.cs" t="Include" />
+            <e p="Tester.cs" t="Include" />
+          </e>
           <e p="ApplyForce.cs" t="Include" />
           <e p="BulletBehavior.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />

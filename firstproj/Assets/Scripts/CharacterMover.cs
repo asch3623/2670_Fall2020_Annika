@@ -4,7 +4,14 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMover : CharBehavior
 {
+public Animator anim;
 
+void Start()
+{
+    anim.SetBool("isIdle", true);
+    anim.SetBool("isJumping", false);
+    anim.SetBool("isWalking", false);
+}
     void Update()
     {
 
@@ -29,6 +36,17 @@ public class CharacterMover : CharBehavior
         positionDirection = transform.TransformDirection(positionDirection);
         controller.Move((knockBackMovement + positionDirection) * Time.deltaTime);
 
+        if (vInput != 0f)
+        {
+            anim.SetBool("isIdle", false);
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isIdle", true);
+            anim.SetBool("isWalking", false);
+        }
+
         if (controller.isGrounded)
         {
             jumpCount = 0;
@@ -38,6 +56,8 @@ public class CharacterMover : CharBehavior
         //double jump
         if (Input.GetButtonDown("Jump") && jumpCount < jumpCountMax)
         {
+            anim.SetBool("isIdle", false);
+            anim.SetBool("isJumping", true);
             yVar += Mathf.Sqrt(jumpForce * -3f * (-gravity));
             positionDirection.Set(moveSpeed.value*vInput, yVar, hInput);
             jumpCount++;
